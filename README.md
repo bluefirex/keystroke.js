@@ -4,6 +4,8 @@ keystroke.js is a fun "game" where you type letters that get bigger and bigger. 
 
 ![Screenshot](http://i.gidix.de/Screenshot 2013-03-12 at 15.33.20_1_781.png)
 
+Demo at [gidix.de](http://shop.gidix.de/keystroke/).
+
 ### What's the purpose of it?
 
 It was just fun. I did it while I had nothing to do in school.
