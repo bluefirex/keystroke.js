@@ -17,3 +17,7 @@ It supports **webkit** 100%. However, I did not test it with IE, Opera (presto) 
 ### Will it be updated?
 
 Sure. Whenever I have ideas for enhancements I will update it.
+
+### LICENSE
+
+Do with it whatever you want. Copy it, modify it, use it however you want to use it. But please don't make an exact copy of it and claim it ownership.
