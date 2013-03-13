@@ -55,6 +55,7 @@ $(document).ready(function() {
 			}
 
 			$('#layout #' + e).append('<div class="char k' + c.k + '" data-weight="' + c.w + '" data-char="' + c.k + '" data-keycode="' + keyCodes[c.k] + '">' + c.k + '</div>');
+			$('#layout #' + e + ' .k' + c.k).delay(i * 50).animate({ opacity: 1 });
 		}
 	}
 
@@ -63,7 +64,11 @@ $(document).ready(function() {
 	finish = false;
 
 	$(window).keyup(function(e) {
-		if (e.keyCode >= 65 && e.keyCode <= 90 && !finish) {
+		/** 189 = MINUS */
+		if (e.keyCode == 189) {
+			finish = false;
+			self.location.reload();
+		} else if (e.keyCode >= 65 && e.keyCode <= 90 && !finish) {
 			var keyElement = $('#layout .char[data-keycode=' + e.keyCode + ']');
 			
 			console.log(keyElement.css('font-size'));
@@ -74,7 +79,7 @@ $(document).ready(function() {
 				});
 
 				var weight = keyElement.attr('data-weight');
-				var currRotate = keyElement.css('-webkit-transform').replace('rotate', '');
+				var currRotate = keyElement.css('transform').replace('rotate', '');
 				console.log(currRotate);
 
 				if (inArray(keyElement.attr('data-char'), leftKeys)) {
