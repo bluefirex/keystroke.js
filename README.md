@@ -2,7 +2,7 @@
 
 keystroke.js is a fun "game" where you type letters that get bigger and bigger. These letters all have different weights that can sink a ship they float on.
 
-![Screenshot](http://i.gidix.de/Screenshot 2013-03-12 at 15.33.20_1_781.png)
+![Screenshot](http://i.gidix.de/Screenshot%202013-03-12%20at%2015.33.20_1_781.png)
 
 Demo at [gidix.de](http://shop.gidix.de/keystroke/).
 
